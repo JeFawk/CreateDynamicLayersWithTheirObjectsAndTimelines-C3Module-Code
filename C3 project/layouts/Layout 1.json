@@ -1,0 +1,219 @@
+{
+	"name": "Layout 1",
+	"layers": [
+		{
+			"name": "Layer 0",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "Button",
+					"properties": {
+						"type": "button",
+						"text": "Create layer 1",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": "",
+						"class": ""
+					},
+					"uid": 8,
+					"sid": 974607637308632,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 974607637308632,
+						"expanded": true
+					},
+					"world": {
+						"x": 192,
+						"y": 672,
+						"width": 163,
+						"height": 44,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "Button2",
+					"properties": {
+						"type": "button",
+						"text": "Create layer 2",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": "",
+						"class": ""
+					},
+					"uid": 10,
+					"sid": 534860924795573,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 534860924795573,
+						"expanded": true
+					},
+					"world": {
+						"x": 416,
+						"y": 672,
+						"width": 163,
+						"height": 44,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "Button3",
+					"properties": {
+						"type": "button",
+						"text": "Create layer 3",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": "",
+						"class": ""
+					},
+					"uid": 11,
+					"sid": 446053029288988,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 446053029288988,
+						"expanded": true
+					},
+					"world": {
+						"x": 640,
+						"y": 672,
+						"width": 163,
+						"height": 44,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "Button4",
+					"properties": {
+						"type": "button",
+						"text": "Destroy all dynamic layers",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": "",
+						"class": ""
+					},
+					"uid": 27,
+					"sid": 976315555264344,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 976315555264344,
+						"expanded": true
+					},
+					"world": {
+						"x": 864,
+						"y": 672,
+						"width": 163,
+						"height": 44,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				}
+			],
+			"sid": 100197554874897,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		}
+	],
+	"scene-graphs-folder-root": {
+		"items": [
+			{
+				"sid": 974607637308632,
+				"expanded": true
+			},
+			{
+				"sid": 534860924795573,
+				"expanded": true
+			},
+			{
+				"sid": 446053029288988,
+				"expanded": true
+			},
+			{
+				"sid": 976315555264344,
+				"expanded": true
+			}
+		],
+		"subfolders": []
+	},
+	"sid": 718433039359666,
+	"nonworld-instances": [],
+	"effectTypes": [],
+	"width": 2560,
+	"height": 1440,
+	"unboundedScrolling": false,
+	"vpX": 0.5,
+	"vpY": 0.5,
+	"projection": "perspective",
+	"eventSheet": "Event sheet 1"
+}

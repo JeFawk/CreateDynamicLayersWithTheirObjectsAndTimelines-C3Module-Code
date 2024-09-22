@@ -1,0 +1,24 @@
+{
+	"name": "Event sheet 2",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 144903484939312
+				}
+			],
+			"actions": [
+				{
+					"id": "play-all-timelines",
+					"objectClass": "TimelineController",
+					"sid": 383409999375900
+				}
+			],
+			"sid": 989958725807020
+		}
+	],
+	"sid": 135703804017217
+}

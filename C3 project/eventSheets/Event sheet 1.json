@@ -1,0 +1,337 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "comment",
+			"text": "This system adds dynamic layers to a layout along with all the objects it contains.\n\nIt uses three layouts:\nLayout 1: contains the buttons which dynamically add the layers.\nLayout 2: acts as an object bank for the layers which will be dynamically added.\nOB 1: acts as a generic object bank.\n\nThis small system adds the layers from Layout 2, as they are there, identically in structure. This results in empty layers. After that it creates the objects from the Layout 2, along with their hierarchy.\nThe layers must be added in the correct order since a way to reorganize them is not implemented here.\n\nIn order to add more objects to a dynamic layer, they must be added in the family. For sprites there is [b]DynamicLayerSprites_F[/b]. If the object type is different (particles, tiled backgrounds) and they are not a child of a parent sprite, a new family must be created and added in the events."
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Button",
+					"sid": 449084107857931
+				}
+			],
+			"actions": [
+				{
+					"id": "add-layer",
+					"objectClass": "System",
+					"sid": 525792416377169,
+					"parameters": {
+						"name": "\"Cinematic Vleed attacking mosquito\"",
+						"insert-by": "0",
+						"where": "above"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 669146183762579,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "play-timeline",
+					"objectClass": "TimelineController",
+					"sid": 136387140176317,
+					"parameters": {
+						"timeline": "Timeline 1",
+						"tags": "\"\""
+					}
+				}
+			],
+			"sid": 763226119145267
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Button2",
+					"sid": 695257926220915
+				}
+			],
+			"actions": [
+				{
+					"id": "add-layer",
+					"objectClass": "System",
+					"sid": 850533297522549,
+					"parameters": {
+						"name": "\"Cinematic Vleed attacking mosquito - 1\"",
+						"insert-by": "\"Cinematic Vleed attacking mosquito\"",
+						"where": "add-bottom-sublayer"
+					}
+				}
+			],
+			"sid": 678916574837497
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Button3",
+					"sid": 728808660511097
+				}
+			],
+			"actions": [
+				{
+					"id": "add-layer",
+					"objectClass": "System",
+					"sid": 229917726272852,
+					"parameters": {
+						"name": "\"Cinematic Vleed attacking mosquito - 2\"",
+						"insert-by": "\"Cinematic Vleed attacking mosquito\"",
+						"where": "add-bottom-sublayer"
+					}
+				}
+			],
+			"sid": 242631402064175
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Button4",
+					"sid": 523904738003883
+				}
+			],
+			"actions": [
+				{
+					"id": "remove-all-dynamic-layers",
+					"objectClass": "System",
+					"sid": 214166429173092
+				}
+			],
+			"sid": 162173825075404
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "layer-name-exists",
+					"objectClass": "System",
+					"sid": 397532074519301,
+					"parameters": {
+						"layer": "\"Cinematic Vleed attacking mosquito\""
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 186664940564302
+				}
+			],
+			"actions": [
+				{
+					"id": "recreate-initial-objects",
+					"objectClass": "System",
+					"sid": 401361025423216,
+					"parameters": {
+						"object": "DynamicLayerSprites_F",
+						"from-x": "0",
+						"from-y": "0",
+						"to-x": "LayoutWidth",
+						"to-y": "LayoutHeight",
+						"source-layout": "\"Layout 2\"",
+						"source-layer": "\"Cinematic Vleed attacking mosquito\"",
+						"dest-layer": "-1",
+						"offset-x": "0",
+						"offset-y": "0",
+						"create-hierarchy": true
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 783709457965140,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "play-all-timelines",
+					"objectClass": "TimelineController",
+					"sid": 627268355115934
+				}
+			],
+			"sid": 222959596845162
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "layer-name-exists",
+					"objectClass": "System",
+					"sid": 129165033595976,
+					"parameters": {
+						"layer": "\"Cinematic Vleed attacking mosquito - 1\""
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 977377754576823
+				}
+			],
+			"actions": [
+				{
+					"id": "recreate-initial-objects",
+					"objectClass": "System",
+					"sid": 505202147315728,
+					"parameters": {
+						"object": "DynamicLayerSprites_F",
+						"from-x": "0",
+						"from-y": "0",
+						"to-x": "LayoutWidth",
+						"to-y": "LayoutHeight",
+						"source-layout": "\"Layout 2\"",
+						"source-layer": "\"Cinematic Vleed attacking mosquito - 1\"",
+						"dest-layer": "-1",
+						"offset-x": "0",
+						"offset-y": "0",
+						"create-hierarchy": true
+					}
+				}
+			],
+			"sid": 984793985404835
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "layer-name-exists",
+					"objectClass": "System",
+					"sid": 704071072475863,
+					"parameters": {
+						"layer": "\"Cinematic Vleed attacking mosquito - 2\""
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 316450942627728
+				}
+			],
+			"actions": [
+				{
+					"id": "recreate-initial-objects",
+					"objectClass": "System",
+					"sid": 840711938761181,
+					"parameters": {
+						"object": "DynamicLayerSprites_F",
+						"from-x": "0",
+						"from-y": "0",
+						"to-x": "LayoutWidth",
+						"to-y": "LayoutHeight",
+						"source-layout": "\"Layout 2\"",
+						"source-layer": "\"Cinematic Vleed attacking mosquito - 2\"",
+						"dest-layer": "-1",
+						"offset-x": "0",
+						"offset-y": "0",
+						"create-hierarchy": true
+					}
+				}
+			],
+			"sid": 414309758299153
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "MainSprinte1",
+					"sid": 844098984230186
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instance",
+					"objectClass": "TimelineController",
+					"sid": 289736995774779,
+					"parameters": {
+						"object-class": "MainSprinte1",
+						"track-id": "\"ID1\""
+					}
+				},
+				{
+					"id": "log",
+					"objectClass": "Browser",
+					"sid": 389742098597225,
+					"parameters": {
+						"type": "log",
+						"message": "\"Created MainSprite1\""
+					}
+				}
+			],
+			"sid": 994571479516824
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Particles",
+					"sid": 751993102011669
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instance",
+					"objectClass": "TimelineController",
+					"sid": 230578440543885,
+					"parameters": {
+						"object-class": "Particles",
+						"track-id": "\"ID2\""
+					}
+				},
+				{
+					"id": "log",
+					"objectClass": "Browser",
+					"sid": 933416756338185,
+					"parameters": {
+						"type": "log",
+						"message": "\"Create Particles\""
+					}
+				}
+			],
+			"sid": 889112544951075
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "TiledBackground",
+					"sid": 387779234114526
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instance",
+					"objectClass": "TimelineController",
+					"sid": 344993185891621,
+					"parameters": {
+						"object-class": "TiledBackground",
+						"track-id": "\"ID3\""
+					}
+				},
+				{
+					"id": "log",
+					"objectClass": "Browser",
+					"sid": 965792745958100,
+					"parameters": {
+						"type": "log",
+						"message": "\"Create TiledBackground\""
+					}
+				}
+			],
+			"sid": 421227383459405
+		}
+	],
+	"sid": 875599859588318
+}

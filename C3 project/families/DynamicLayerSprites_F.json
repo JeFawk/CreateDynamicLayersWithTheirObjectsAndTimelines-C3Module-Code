@@ -1,0 +1,19 @@
+{
+	"name": "DynamicLayerSprites_F",
+	"plugin-id": "Sprite",
+	"sid": 269068466177584,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "DragDrop",
+			"sid": 940627816557128
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"MainSprite2",
+		"MainSprite3",
+		"MainSprinte1"
+	]
+}
